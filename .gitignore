@@ -1,0 +1,40 @@
+# Maven
+/target/
+/out/
+/.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+/.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse/STS
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.apt_generated
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+# Logs e temporários
+*.log
+*.tmp
+*.swp
+
+# Configurações sensíveis
+application.properties
+application.yml
+.env

@@ -1,0 +1,40 @@
+server:
+  port: 3033
+  servlet:
+    context-path: '/curso/'
+
+spring:
+  application:
+    name: Curso
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/curso_db
+    username: postgres
+    password: wyl4231!
+    driver-class-name: org.postgresql.Driver
+
+    hikari:
+      maximum-pool-size: 10
+
+  jpa:
+    open-in-view: false
+
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        jdbc:
+          lob.non_contextual_creation: true
+
+  output:
+    ansi:
+      enabled: Always
+    SQL: debug
+    type:
+      descriptor:
+        sql:
+          BasicBinder: trace
